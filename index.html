@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>EXJS4</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        
+        <hr>
+        <h3 class="mt-4 mb-5">Bài tập 1: Tính ngày tháng năm</h3>
+
+        <div class="form-group row">
+            <div class="col-3">
+                <input id="ngayNhap" class="form-control" placeholder="Nhập số thứ 1" type="number" />
+            </div>
+            <div class="col-3">
+                <input id="thangNhap" class="form-control" placeholder="Nhập số thứ 2" type="number" />
+            </div>
+            <div class="col-3">
+                <input id="namNhap" class="form-control" placeholder="Nhập số thứ 3" type="number" />
+            </div>
+        </div>
+        <div class="container ml-5">
+            <button class="btn btn-primary pl-4 pr-4 mb-3 mt-2 ml-5" id="homQua" style="border-radius:15px;">Hôm
+                qua</button>
+            <button class="btn btn-primary pl-4 pr-4 mb-3 mt-2 ml-5" id="ngayMai" style="border-radius:15px;">Ngày
+                mai</button>
+        </div>
+        <div class="form-group mt-2 alert alert-success">
+            <i class="fa-solid fa-hand-point-right" style="color: orange;"></i>
+            <span id="ketQua_5"></span>
+        </div>
+
+        <hr>
+        <h3 class="mt-4 mb-5">Bài tập 2: Tính ngày</h3>
+
+        <div class="form-group row">
+            <div class="col-4">
+                <input id="nhapThang" class="form-control" placeholder="Nhập tháng" type="number" />
+            </div>
+            <div class="col-4">
+                <input id="nhapNam" class="form-control" placeholder="Nhập năm" type="number" />
+            </div>
+            <div class="col-4">
+                <button id="tinhNgay" class="btn btn-primary pl-4 pr-4" style="border-radius:15px;">Tính Ngày</button>
+            </div>
+        </div>
+        <div class="form-group mt-2 alert alert-success" style="height: 50px;">
+            <i class="fa-solid fa-hand-point-right" style="color: orange;"></i>
+            <span id="ketQua_b6"></span>
+        </div>
+        <hr>
+        <h3 class="mt-4 mb-5">Bài tập 3: Đọc số</h3>
+
+        <div class="form-group row">
+            <div class="col-4">
+                <input id="nhapSo3ChuSo" class="form-control" placeholder="Nhập số có 3 chữ số" type="number" />
+            </div>
+            <div class="col-4">
+                <button id="docSo" class="btn btn-primary pl-4 pr-4" style="border-radius:15px;">Đọc Số</button>
+            </div>
+        </div>
+        <div class="form-group mt-2 alert alert-success" style="height: 50px;">
+            <i class="fa-solid fa-hand-point-right" style="color: orange;"></i>
+            <span id="ketQua_b7"></span>
+        </div>
+        <hr>
+
+        <h3 class="mt-4 mb-5">Bài tập 4: Tìm sinh viên xa trường nhất</h3>
+
+        <div class="form-group row">
+
+            <div class="col-4 mb-3">
+                <input id="SV1" class="form-control" placeholder="Nhập tên sinh viên 1" type="text" />
+            </div>
+            <div class="col-4 mb-3">
+                <input id="x1" class="form-control" placeholder="Tọa độ x" type="number" />
+            </div>
+            <div class="col-4 mb-3">
+                <input id="y1" class="form-control" placeholder="Tọa độ y" type="number" />
+            </div>
+            <div class="col-4 mb-3">
+                <input id="SV2" class="form-control" placeholder="Nhập tên sinh viên 2" />
+            </div>
+            <div class="col-4 mb-3">
+                <input id="x2" class="form-control" placeholder="Tọa độ x" type="number" />
+            </div>
+            <div class="col-4 mb-3">
+                <input id="y2" class="form-control" placeholder="Tọa độ y" type="number" />
+            </div>
+            <div class="col-4">
+                <input id="SV3" class="form-control" placeholder="Nhập tên sinh viên 3" />
+            </div>
+            <div class="col-4">
+                <input id="x3" class="form-control" placeholder="Tọa độ x" type="number" />
+            </div>
+            <div class="col-4">
+                <input id="y3" class="form-control" placeholder="Tọa độ y" type="number" />
+            </div>
+        </div>
+
+        <p style="font-size: 30px;">Trường</p>
+        <div class="row">
+            <div class="col-4">
+                <input id="xT" class="form-control" placeholder="Tọa độ x" type="number" />
+            </div>
+            <div class="col-4">
+                <input id="yT" class="form-control" placeholder="Tọa độ y" type="number" />
+            </div>
+        </div>
+        <div class="container ml-5">
+            <button class="btn btn-primary pl-4 pr-4 mb-3 mt-2 ml-5" id="tinhQuangDuong"
+                style="border-radius:15px;">Tìm</button>
+        </div>
+        <div class="form-group mt-2 alert alert-success">
+            <i class="fa-solid fa-hand-point-right" style="color: orange;"></i>
+            <span id="ketQua_8"></span>
+        </div>
+
+        <hr>
+
+
+
+
+
+
+
+
+
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
